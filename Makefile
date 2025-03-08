@@ -6,6 +6,7 @@ test:
 	python -m pytest -vv test_hello.py
 
 format:
+	pip install --upgrade black click &&\
 	black *.py
 
 lint:
